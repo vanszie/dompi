@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan Privasi Dompi</title>
+<meta name="description" content="Kebijakan Privasi aplikasi Dompi: Asisten Keuanganmu">
+<style>
+  :root { --bg:#f7f6fd; --card:#ffffff; --ink:#1d1b2e; --muted:#5d5a73; --brand:#5b47e8; --line:#e4e1f3; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#13121c; --card:#1d1b2a; --ink:#ecebf5; --muted:#a6a3bd; --brand:#9d8dff; --line:#2e2b42; }
+  }
+  :root[data-theme="dark"] { --bg:#13121c; --card:#1d1b2a; --ink:#ecebf5; --muted:#a6a3bd; --brand:#9d8dff; --line:#2e2b42; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  header { margin-bottom:24px; }
+  .brand { display:inline-block; background:var(--brand); color:#fff; font-weight:700; border-radius:10px; padding:4px 12px; font-size:14px; }
+  h1 { font-size:28px; line-height:1.25; margin:14px 0 4px; }
+  .meta { color:var(--muted); font-size:14px; margin:0; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 20px; margin:14px 0; }
+  h2 { font-size:18px; margin:0 0 8px; }
+  p, li { margin:6px 0; }
+  ul { padding-left:20px; margin:6px 0; }
+  a { color:var(--brand); }
+  .en { color:var(--muted); font-size:15px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <span class="brand">Dompi</span>
+  <h1>Kebijakan Privasi Dompi: Asisten Keuanganmu</h1>
+  <p class="meta">Berlaku sejak 16 Oktober 2026</p>
+</header>
+
+<section>
+  <h2>Ringkasan</h2>
+  <p>Dompi adalah aplikasi pencatat keuangan pribadi. Data keuangan Anda disimpan di <strong>Google Sheet milik Anda sendiri</strong>, di akun Google Anda. Pengembang Dompi tidak memiliki server untuk menyimpan data Anda, tidak bisa melihat catatan keuangan Anda, dan tidak menjual data Anda kepada siapa pun.</p>
+</section>
+
+<section>
+  <h2>1. Akun Google dan Google Sheet</h2>
+  <ul>
+    <li>Saat masuk, Dompi meminta izin melihat <strong>nama dan alamat email</strong> akun Google Anda untuk menampilkan akun yang sedang dipakai.</li>
+    <li>Dompi memakai izin <strong>Google Drive "drive.file"</strong>, yang hanya memberi akses ke file yang dibuat atau dibuka oleh Dompi sendiri (spreadsheet "Dompi - Laporan Keuangan"). Dompi tidak bisa membaca file lain di Google Drive Anda.</li>
+    <li>Transaksi (tanggal, jenis, kategori, keterangan, nominal) dan kategori buatan Anda disimpan di spreadsheet tersebut. Data dikirim langsung dari HP Anda ke Google melalui koneksi terenkripsi (HTTPS).</li>
+    <li>Penggunaan data dari Google API mematuhi <a href="https://developers.google.com/terms/api-services-user-data-policy">Kebijakan Data Pengguna Layanan Google API</a>, termasuk ketentuan Limited Use.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>2. Mikrofon (input suara)</h2>
+  <p>Saat Anda menekan tombol mikrofon, ucapan Anda diubah menjadi teks oleh layanan pengenalan suara bawaan Android (biasanya disediakan Google). Dompi hanya menerima teks hasilnya dan tidak merekam atau menyimpan file suara.</p>
+</section>
+
+<section>
+  <h2>3. Kamera, foto, dan file PDF</h2>
+  <ul>
+    <li>Foto struk atau catatan dibaca <strong>langsung di HP Anda</strong> (pengenalan teks di perangkat). Foto tidak diunggah ke server pengembang.</li>
+    <li>File e-statement PDF juga diproses di HP. Kata sandi PDF hanya dipakai untuk membuka file saat itu dan tidak disimpan.</li>
+    <li>Daftar transaksi impor yang belum disimpan tersimpan sementara di HP sampai Anda simpan atau hapus.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>4. Catat otomatis dari notifikasi (versi Dompi Otomatis)</h2>
+  <ul>
+    <li>Fitur ini hanya aktif jika Anda menyalakannya dan memberi izin <strong>Akses Notifikasi</strong> di pengaturan Android.</li>
+    <li>Dompi hanya membaca notifikasi dari aplikasi bank, e-wallet, dan pembayaran yang dikenali, untuk mengambil nominal, nama penerima atau toko, dan waktu transaksi.</li>
+    <li>Notifikasi yang berisi kode OTP, PIN, atau kata sandi diabaikan dan tidak disimpan.</li>
+    <li>Pemrosesan terjadi di HP Anda. Hasilnya hanya dikirim ke Google Sheet milik Anda. Anda dapat mematikan fitur ini kapan saja.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>5. Kunci aplikasi (PIN dan sidik jari)</h2>
+  <p>PIN disimpan di HP dalam bentuk hash (tidak bisa dibaca kembali). Verifikasi sidik jari atau wajah ditangani oleh sistem Android; Dompi tidak pernah menerima data biometrik Anda.</p>
+</section>
+
+<section>
+  <h2>6. Iklan</h2>
+  <ul>
+    <li>Dompi menampilkan iklan dari <strong>Google AdMob</strong>. Untuk menampilkan dan mengukur iklan, Google dapat mengumpulkan data seperti ID iklan perangkat, alamat IP, informasi perangkat, dan interaksi dengan iklan.</li>
+    <li>Data keuangan Anda <strong>tidak</strong> dibagikan ke jaringan iklan.</li>
+    <li>Jika diwajibkan oleh peraturan di wilayah Anda, Dompi menampilkan formulir persetujuan iklan. Anda dapat mengubah pilihan melalui menu <em>Privasi iklan</em> di aplikasi.</li>
+    <li>Anda juga dapat menghapus atau mereset ID iklan di Pengaturan Android &rarr; Google &rarr; Iklan.</li>
+    <li>Pelajari lebih lanjut: <a href="https://policies.google.com/technologies/partner-sites">Cara Google menggunakan data dari aplikasi partner</a> dan <a href="https://policies.google.com/privacy">Kebijakan Privasi Google</a>.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>7. Penyimpanan, penghapusan, dan kendali Anda</h2>
+  <ul>
+    <li>Data keuangan tersimpan di Google Sheet Anda selama Anda tidak menghapusnya. Anda dapat mengubah atau menghapus transaksi di aplikasi, atau menghapus seluruh spreadsheet di Google Drive.</li>
+    <li>Menghapus instalasi Dompi menghapus data lokal di HP (pengaturan, PIN, daftar sementara).</li>
+    <li>Anda dapat mencabut akses Dompi ke akun Google kapan saja di <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>8. Anak-anak</h2>
+  <p>Dompi tidak ditujukan untuk anak di bawah 13 tahun dan tidak dengan sengaja mengumpulkan data dari anak-anak.</p>
+</section>
+
+<section>
+  <h2>9. Perubahan kebijakan</h2>
+  <p>Kebijakan ini dapat diperbarui sesuai perkembangan aplikasi. Tanggal berlaku di bagian atas halaman akan diperbarui setiap ada perubahan.</p>
+</section>
+
+<section>
+  <h2>10. Kontak</h2>
+  <p>Pertanyaan tentang privasi dapat dikirim ke: <a href="mailto:vanszie88@gmail.com">vanszie88@gmail.com</a></p>
+</section>
+
+<section class="en">
+  <h2>English summary</h2>
+  <p>Dompi is a personal finance app. Your financial records are stored in a Google Sheet in your own Google account, using the limited "drive.file" scope (only files Dompi creates or opens). The developer runs no server and cannot see your data. Speech is converted to text by Android's speech service; photos and PDF statements are processed on your device. The optional auto-capture feature reads notifications from recognised banking and payment apps only, ignores OTP/PIN messages, and sends results only to your Sheet. The app shows ads from Google AdMob, which may collect device identifiers (advertising ID), IP address and ad interactions; your financial data is never shared with ad networks. Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. The app is not directed to children under 13. Contact: vanszie88@gmail.com</p>
+</section>
+</main>
+</body>
+</html>
